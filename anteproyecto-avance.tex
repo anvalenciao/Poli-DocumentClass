@@ -1,0 +1,119 @@
+\documentclass[spanish, 12pt, letterpaper]{poli}
+
+% APA Style References
+\usepackage{url}
+\usepackage{apacite}
+
+% Table
+\usepackage{csvsimple}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+% Footer
+\usepackage{fancyhdr,graphicx,lastpage}
+\fancypagestyle{plain}{
+	\fancyhf{}% Clear
+	\fancyfoot[C]{\vspace*{0cm}\includegraphics[scale=.16]{logo-institucional}}
+	\fancyfoot[R]{\vspace*{.5cm}\thepage\  / \pageref{LastPage}}
+	\renewcommand{\headrulewidth}{0pt}% % No header rule
+	\renewcommand{\footrulewidth}{0pt}% % No footer rule
+}
+\pagestyle{plain}% Set page style to plain.
+
+% Document cover
+\title{%
+	Título del trabajo \\
+	\normalfont
+	\color{black}
+	\normalsize Anteproyecto / Avance de proyecto de grado \\
+	\normalsize Línea de investigación del grupo FICB-PG:  \\
+	\normalsize Grupo de Investigación FICB-PG
+}
+\author{%
+	Nombre apellidos 1 (código), Nombre apellidos 2 (código), \\
+	\normalfont
+	\normalsize \color{black}{Asesor temático}: \color{poliBlue}{Nombre apellidos y acrónimo del último título obtenido}
+}
+\date{Mes y año de presentación}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	Este apartado debe estar diseñado para invitar al lector a continuar leyendo el documento de tal manera que se debe indicar: el propósito del trabajo, el método para llevar a cabo lo que va del documento – por lo general en esta etapa el maestrante habrá realizado un proceso de revisión sistemática de literatura \cite{rave2012como} –, la extensión máxima es de 300 palabras.
+\end{abstract}
+\keywords{Palabras clave}{PalabrasClave1, PalabrasClave2, PalabrasClave3, Deben ser entre mínimo 3 y máximo 5 palabras EN ESPAÑOL que deben estar intrínsecamente relacionadas con el objetivo planteado y por ende con la literatura revisada y el título del trabajo.}
+
+\renewcommand{\abstractname}{Abstract}
+\begin{abstract}
+	This part of the document is designed for invite who is reading to continue with it, in this vein it must show: the purpose of the research, the method that has been used to elaborate the advance – in this stage, in the majority of the cases, postgraduate student will have made a systematic literature process \shortcite{rave2012como} –, the maximum extension is 300 words.
+\end{abstract}
+\keywords{Keywords}{Keyword1, Keyword2, Keyword3, This part of the document must have between 3 and 5 words in English that have to be intrinsically related to objective – purpose – and with literature reviewed and work denomination.}
+
+
+\section{Introducción}
+Este apartado debe contener los antecedentes, justificación, sistematización, alcance y planteamiento del problema a abordar en el marco del proyecto de investigación de maestría y debe cerrar o con el objetivo central del trabajo o con la pregunta de investigación que planteare el estudiante y el planteamiento de los objetivos específicos derivados de ello, se sugiere que su extensión no sea mayor a 1800 palabras. Hay que cuidar que el tema de estudio en lo posible refleje las siguientes características:
+
+\begin{enumerate}
+	\item \textbf{Ser novedoso}: se debe revisar que tenga un aporte teórico, un aporte metodológico o que aborde un ámbito distinto a trabajos anteriores, con respecto a la revisión de literatura efectuada, de forma que los resultados del proyecto sean valiosos y atractivos para los diferentes escenarios de divulgación (revistas, ponencias, congresos, etc.)
+	\item \textbf{Orientación}: estar orientado a que sus resultados sirvan a la solución de problemáticas concretas y actuales en las áreas de conocimiento propias de la Maestría y del grupo de investigación de la Facultad de Ingeniería y Ciencias Básicas.
+	\item \textbf{Pertinencia}: evidenciar el impacto que tendrá la ejecución del proyecto en un contexto determinado.
+	\item \textbf{Factible}: prever que el proceso de investigación sea posiblemente ejecutado en términos de tiempo (un año) y recursos.
+	\item \textbf{Evidenciable}: prever y dimensionar la forma en que se lograría evidenciar el logro (entregables) de cada uno de los objetivos planteados.
+\end{enumerate}
+
+Para el planteamiento y formulación del problema se sugiere que tenga en cuenta:
+\begin{enumerate}
+	\item El problema expresa la relación entre dos o más variables
+	\item El problema y los objetivos relacionados dejan claro el contexto en el cual se desarrolla el proyecto.
+	\item El problema se debe formular con claridad y evitando ambigüedades.
+	\item El problema debe ser susceptible de validación o comprobación empírica.
+	\item Los objetivos y el problema deben ser coherentes.
+\end{enumerate}
+
+
+\section{Revisión de Literatura}
+Este apartado debe contener la literatura relevante y adecuada que expresa las posturas teóricas respecto al problema planteado en el apartado anterior. En coherencia con lo anterior, debe contener las variables que se pretenden a abordar en el marco del proyecto de investigación de maestría, dando cuenta de su relación y relevancia en el contexto o ámbito en el que se desarrollaría la investigación, se sugiere que su extensión no sea mayor a 6.000 palabras y que lleve títulos y subtítulos que lleven y orienten al lector de lo general a lo particular. De igual forma, la literatura que se referencie debe estar en una ventana de observación de máximo 10 años con respecto a la fecha de escritura del documento.
+
+\subsection{Sobre el uso de tablas y figuras}
+Las tablas y figuras deben estar enumeradas consecutivamente y deben ser explicadas y referenciadas en el marco del texto, se sugiere usar el editor automático de Word; asimismo, al final de cada una de ellas se debe dar cuenta de su fuente. Ejemplo:
+
+\begin{table}[h]
+	\color{poliBlue}
+	\caption{Cantidad de Investigadores de Colombia según la evaluación de desempeño de actividades científicas de 2013.}
+	\label{tab:caption}
+	\begin{center}
+		\csvautobooktabular{table1.csv}
+	\end{center}
+	Fuente: Elaboración propia a partir de \citeA{colciencias2015modelo}
+\end{table}
+
+
+\section{Estrategia Metodológica}
+Este apartado debe contener la manera en la cual se abordará el problema en coherencia con su naturaleza, se sugiere que su extensión no sea mayor a 2000 palabras. Se debe exponer, sustentar y justificar:
+
+\begin{enumerate}
+	\item El enfoque metodológico.
+	\item El diseño muestral o de abordaje de participantes.
+	\item La descripción del universo, población, muestra o participantes, según aplique, dando cuenta de los criterios o mecanismos de inclusión o exclusión y los aspectos éticos para abordarles y para el manejo de su información.
+	\item La descripción de las variables y las relaciones a verificar en ellas, y si aplica planteamiento de hipótesis.
+	\item Los instrumentos teniendo en cuenta los ejes de indagación, categorías orientadoras, relación y operacionalización de variables e indicadores, según aplique.
+	\item Los mecanismos para dar validez y rigor a los instrumentos, trabajos de campo y en general la ejecución metodológica.
+	\item Las maneras y aplicativos para procesar la información detallando el procedimiento para tal fin.
+\end{enumerate}
+
+
+\section{Desarrollo e Implementación (Avances)}
+En esta sección se presentan y explican, a modo de avances, las herramientas desarrolladas y particularidades de la implementación según los pasos presentados en la metodología. Si aplica, se presenta el escenario particular de aplicación de la metodología, y la forma en que dicho escenario o contexto modifica o afecta la forma de implementación. Puede así presentarse en esta sección el diseño de experimentos y el detalle del conjunto de datos y variables de entrada.\\
+Se presentan también aspectos técnicos que sean relevantes en el proyecto y que hayan de alguna manera afectado (de manera positiva o negativa) el procesamiento o la obtención de los resultados.
+
+
+\section{Resultados Preliminares}
+Este apartado debe contener los hallazgos y resultados preliminares de haber implementado los pasos de la metodología, de preferencia en el orden del planteamiento que llevan los objetivos específicos del trabajo. En este apartado no se hacen conclusiones o sugerencias, sino se presenta la información tal cual fue obtenida de las fuentes de las que se dio cuenta en el apartado de ESTRATEGIA METODOLÓGICA.
+
+\bibliographystyle{apacite}
+\bibliography{bibliography}
+Este apartado debe dar cuenta de TODOS los textos a los que efectivamente se hizo referencia en el marco del texto, no se deben incluir textos a lo que no se haya hecho alusión. Se sugiere usar el editor automático de Word o Mendeley. El formato de las referencias para esta entrega es el más reciente indicado por la Asociación Americana de Psicología (APA, por sus siglas en inglés).
+
+\end{document}
